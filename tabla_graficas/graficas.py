@@ -19,21 +19,6 @@ def plot_hist(clases, freq_absoluta, mrks, labelx, labely, titulo):
     plt.title(titulo, fontsize=20)  # Title
     plt.grid()  # Enable grid
     plt.show()  # Display the plot
-    
-"""def plot_hist(clases, freq_absoluta, mrks, labelx, labely, titulo):
-
-    plt.figure(figsize=(12, 8))  # Set the figure size
-
-    plt.bar(mrks, freq_absoluta,
-           width=0.3, edgecolor="k",
-           color=["#14BF48", "#33FFBE", "#333CFF", "#FF3349", "#F6FF33", "#33FFBE"])
-    
-    plt.xticks(mrks,  fontsize=12)
-    plt.xlabel(labelx, fontsize=15)  # X-axis label
-    plt.ylabel(labely, fontsize=15)  # Y-axis label
-    plt.title(titulo, fontsize=20)  # Title
-    plt.grid()  # Enable grid
-    plt.show()  # Display the plot"""
 
 # Poligono de frecuencia
 def plot_poligono(clases, fa_sorted,marcas_texto, labelx, labely, titulo):
@@ -57,7 +42,7 @@ def plot_poligono(clases, fa_sorted,marcas_texto, labelx, labely, titulo):
     plt.show()  # Mostrar gráfico
 
 # Diagrama de barras
-def plot_barras(clases, fa_sorted,marcas_texto, labelx, labely, titulo):
+def plot_barras(clases, fa_sorted, labelx, labely, titulo):
 
         plt.figure(figsize=(12, 6))  # Ancho, Alto del gráfico
 
@@ -69,7 +54,7 @@ def plot_barras(clases, fa_sorted,marcas_texto, labelx, labely, titulo):
                 height=0.5, edgecolor="k",
                 color=["#33FFBE", "#333CFF", "#FF3349", "#F6FF33", "#333CFF", "#33FFBE"])
 
-        plt.yticks(clases, marcas_texto, fontsize=12, rotation=45)
+        plt.yticks(clases, fontsize=12, rotation=45)
         plt.xlabel(labelx, fontsize=15)  # Etiqueta del eje x
         plt.ylabel(labely, fontsize=15)  # Etiqueta del eje y
         plt.title(titulo, fontsize=20)  # Etiqueta del título
