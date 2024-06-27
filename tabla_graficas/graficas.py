@@ -7,7 +7,7 @@ def plot_hist(clases, freq_absoluta, mrks, labelx, labely, titulo):
     if max(mrks) > 500:
         bar_width = 30.0
     else:
-        bar_width = 15.0
+        bar_width = 0.3
 
     plt.bar(mrks, freq_absoluta,
            width=bar_width, edgecolor="k",
